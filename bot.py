@@ -98,7 +98,7 @@ def main() -> None:
     """Start the bot with persistence."""
     # Create the Application and pass it your bot's token.
     persistence = PicklePersistence(filepath='bot_data.pickle')
-    application = Application.builder().token("7371737239:AAGtxlnv40RgaIso_ff5db47okPEgGUGg3M").persistence(persistence).build()
+    application = Application.builder().token("your-bot-api").persistence(persistence).build()
 
     # Define the conversation handler with the states ASKING_NAME, ASKING_QUESTION, and CHANGING_NAME
     conv_handler = ConversationHandler(
